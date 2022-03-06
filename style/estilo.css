@@ -1,0 +1,136 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Beautifully' ;
+    src: url(../fontes/Beautifully.woff);
+}
+
+body {
+    color: #fff;
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+}
+
+header .containers {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+  margin-right: 25px;
+  position: fixed;
+  z-index:3;
+}
+
+header .logo {
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
+header nav {
+    margin-top: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color:#fff;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #aaa;
+}
+
+.cabecalho {
+    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)100%);
+}
+
+/*filme-principal*/
+
+.filme-principal {
+    height: 500px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('../imagens/capa-house.jpg');
+    background-size: cover;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.botao {
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+
+
+    color:#fff;
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    font-size:12px;
+
+    padding: 10px 10px;
+    margin-right: 15px;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color:#000;
+    opacity: 1;
+}
+
+.botao i {
+ margin-right: 5px;;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS',  Arial, sans-serif;
+}
+
+.of {
+    font-family: 'Beautifully';
+}
+
+.teste {
+    display: block;
+    min-height: 13.2vw;
+    position: relative;
+    margin-bottom: 1.2vw;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+}
